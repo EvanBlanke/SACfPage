@@ -914,6 +914,105 @@ section {
   margin-bottom: 12px;
 }
 
+/* ---------- Hub notice (inline in hero) ---------- */
+.hub-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 217, 142, 0.28);
+  border-radius: 999px;
+  font-size: 0.84rem;
+  color: rgba(255, 248, 236, 0.82);
+  font-weight: 500;
+}
+
+/* ---------- Hub requirement callout band ---------- */
+.hub-band {
+  background: linear-gradient(135deg, var(--night-2), var(--indigo));
+  border-top: 1px solid rgba(255, 217, 142, 0.14);
+  border-bottom: 1px solid rgba(255, 217, 142, 0.14);
+  padding: clamp(32px, 5vw, 52px) 0;
+  color: rgba(255, 248, 236, 0.88);
+}
+
+.hub-band-inner {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 820px;
+}
+
+.hub-band-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(140deg, rgba(255, 179, 71, 0.2), rgba(255, 107, 53, 0.2));
+  border: 1px solid rgba(255, 142, 60, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.hub-band-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hub-band strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--gold-pale);
+  margin-bottom: 6px;
+}
+
+.hub-band p {
+  font-size: 0.95rem;
+  color: rgba(255, 248, 236, 0.7);
+  max-width: 680px;
+}
+
+/* ---------- "New" badge on feature cards ---------- */
+.badge-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--ember), var(--gold));
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* ---------- Mid-page section CTA ---------- */
+.section-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: clamp(40px, 7vw, 64px);
+}
+
+.social-proof {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
+}
+
 /* ============================================================
    Mobile
    ============================================================ */
