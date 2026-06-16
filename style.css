@@ -235,13 +235,13 @@ h1, h2, h3 {
 /* the sun cresting the bottom of the hero */
 .hero .sun {
   position: absolute;
-  bottom: clamp(-220px, -16vw, -120px);
+  bottom: clamp(-300px, -20vw, -190px);
   left: 50%;
   width: clamp(280px, 42vw, 520px);
   height: clamp(280px, 42vw, 520px);
   border-radius: 50%;
   background: radial-gradient(circle at 50% 38%,
-    #fffdf2 0%, var(--gold-pale) 30%, var(--gold) 55%, rgba(255, 142, 60, 0) 78%);
+    #fffdf2 0%, var(--gold-pale) 28%, var(--gold) 50%, rgba(255, 142, 60, 0) 70%);
   transform: translateX(-50%);
   pointer-events: none;
   animation: sunrise 2.4s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -337,7 +337,8 @@ h1, h2, h3 {
 
 .cta-note {
   font-size: 0.88rem;
-  color: rgba(255, 248, 236, 0.66);
+  color: rgba(255, 248, 236, 0.92);
+  text-shadow: 0 1px 12px rgba(12, 18, 38, 0.7);
 }
 
 .hero-points {
@@ -355,8 +356,8 @@ h1, h2, h3 {
   gap: 8px;
   font-size: 0.88rem;
   font-weight: 600;
-  color: rgba(255, 248, 236, 0.92);
-  text-shadow: 0 1px 10px rgba(12, 18, 38, 0.45);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(12, 18, 38, 0.9), 0 2px 16px rgba(12, 18, 38, 0.6);
 }
 
 .hero-points svg {
@@ -453,6 +454,13 @@ section {
   font-size: 1.05rem;
   color: var(--ink);
   font-weight: 600;
+}
+
+.timeline-note {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
 }
 
 /* ---------- Features ---------- */
@@ -921,12 +929,15 @@ section {
   gap: 7px;
   margin-top: 18px;
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 217, 142, 0.28);
+  background: rgba(12, 18, 38, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 217, 142, 0.4);
   border-radius: 999px;
   font-size: 0.84rem;
-  color: rgba(255, 248, 236, 0.82);
+  color: rgba(255, 248, 236, 0.95);
   font-weight: 500;
+  text-shadow: 0 1px 8px rgba(12, 18, 38, 0.6);
 }
 
 /* ---------- Hub requirement callout band ---------- */
