@@ -197,7 +197,7 @@ h1, h2, h3 {
       var(--gold) 100%);
   color: #fff;
   text-align: center;
-  padding: clamp(84px, 14vh, 150px) 24px clamp(150px, 22vh, 230px);
+  padding: clamp(72px, 12vh, 130px) 24px clamp(120px, 16vh, 180px);
 }
 
 /* star field — two layers of tiny radial dots, twinkling */
@@ -235,7 +235,7 @@ h1, h2, h3 {
 /* the sun cresting the bottom of the hero */
 .hero .sun {
   position: absolute;
-  bottom: clamp(-300px, -20vw, -190px);
+  bottom: clamp(-460px, -30vw, -320px);
   left: 50%;
   width: clamp(280px, 42vw, 520px);
   height: clamp(280px, 42vw, 520px);
@@ -341,35 +341,9 @@ h1, h2, h3 {
   text-shadow: 0 1px 12px rgba(12, 18, 38, 0.7);
 }
 
-.hero-points {
-  display: flex;
-  gap: 10px 26px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  animation: rise 0.9s 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.hero-points span {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(12, 18, 38, 0.9), 0 2px 16px rgba(12, 18, 38, 0.6);
-}
-
-.hero-points svg {
-  width: 15px;
-  height: 15px;
-  color: var(--gold);
-  flex-shrink: 0;
-}
-
 /* ---------- Sections ---------- */
 section {
-  padding: clamp(64px, 10vw, 104px) 0;
+  padding: clamp(44px, 5.5vw, 72px) 0;
 }
 
 .section-kicker {
@@ -393,13 +367,22 @@ section {
   text-align: center;
   color: var(--ink-soft);
   max-width: 620px;
-  margin: 0 auto clamp(40px, 6vw, 60px);
+  margin: 0 auto clamp(26px, 3.5vw, 40px);
   font-size: 1.05rem;
 }
 
 /* ---------- Sunrise timeline (signature element) ---------- */
 .timeline-section {
-  padding-top: clamp(56px, 8vw, 88px);
+  padding-top: clamp(40px, 5vw, 60px);
+}
+
+/* Tighten the seam where two same-background sections stack */
+#features {
+  padding-top: clamp(24px, 3vw, 40px);
+}
+
+#pricing {
+  padding-top: clamp(24px, 3vw, 40px);
 }
 
 .sunrise-timeline {
@@ -837,7 +820,7 @@ section {
     linear-gradient(180deg, var(--sky-deep) 0%, var(--sky) 55%, var(--gold-pale) 100%);
   color: #fff;
   text-align: center;
-  padding: clamp(90px, 14vw, 140px) 24px;
+  padding: clamp(60px, 8vw, 96px) 24px;
 }
 
 .final-cta h2 {
@@ -938,6 +921,7 @@ section {
   color: rgba(255, 248, 236, 0.95);
   font-weight: 500;
   text-shadow: 0 1px 8px rgba(12, 18, 38, 0.6);
+  animation: rise 0.9s 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 /* ---------- Hub requirement callout band ---------- */
@@ -1040,13 +1024,7 @@ section {
   }
 
   .hero {
-    padding-bottom: 170px;
-  }
-
-  .hero-points {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    padding-bottom: 150px;
   }
 
   .btn-appstore {
