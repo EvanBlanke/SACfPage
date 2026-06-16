@@ -185,6 +185,12 @@ h1, h2, h3 {
 .hero {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
   background:
     linear-gradient(180deg,
       var(--night) 0%,
@@ -197,7 +203,7 @@ h1, h2, h3 {
       var(--gold) 100%);
   color: #fff;
   text-align: center;
-  padding: clamp(72px, 12vh, 130px) 24px clamp(120px, 16vh, 180px);
+  padding: clamp(96px, 14vh, 150px) 24px clamp(120px, 16vh, 180px);
 }
 
 /* star field — two layers of tiny radial dots, twinkling */
@@ -235,7 +241,7 @@ h1, h2, h3 {
 /* the sun cresting the bottom of the hero */
 .hero .sun {
   position: absolute;
-  bottom: clamp(-460px, -30vw, -320px);
+  bottom: clamp(-412px, -26vw, -272px);
   left: 50%;
   width: clamp(280px, 42vw, 520px);
   height: clamp(280px, 42vw, 520px);
@@ -258,6 +264,7 @@ h1, h2, h3 {
   max-width: 780px;
   margin: 0 auto;
   z-index: 1;
+  transform: translateY(-48px);
 }
 
 .hero-kicker {

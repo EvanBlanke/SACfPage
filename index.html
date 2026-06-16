@@ -294,6 +294,16 @@
   </footer>
 
   <script>
+    // Load at the top on refresh instead of restoring the previous scroll
+    // position (which would reveal the next section under the full-height hero).
+    // Hash links (e.g. #features) are unaffected and still scroll into view.
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+
     // Header shifts from night to day styling once the hero is scrolled past
     const header = document.getElementById('top-header');
     const hero = document.querySelector('.hero');
