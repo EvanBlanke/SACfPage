@@ -1,4 +1,49 @@
-User-agent: *
+# ==========================================
+# 1. ALLOW AI SEARCH & DISCOVERY BOTS
+# ==========================================
+
+User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# ==========================================
+# 2. BLOCK PURE AI TRAINING / MODEL SCRAPING
+# ==========================================
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://www.sunrisealarmapp.com/sitemap.xml
+
+# ==========================================
+# 3. GLOBAL FALLBACK
+# ==========================================
+
+User-agent: *
+Allow: /
