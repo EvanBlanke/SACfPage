@@ -926,6 +926,35 @@ section {
   animation: rise 0.9s 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* ---------- Wind-Down Mode (sunset counterpart) ---------- */
+.winddown {
+  background:
+    radial-gradient(900px 420px at 50% -10%, rgba(255, 142, 60, 0.14), transparent 65%),
+    linear-gradient(180deg, var(--night), var(--night-2));
+  color: #fff;
+}
+
+.winddown .section-kicker { color: var(--gold); }
+
+.winddown .section-sub { color: rgba(255, 248, 236, 0.72); }
+
+.winddown-bar {
+  background: linear-gradient(90deg,
+    #fff3d6 0%, var(--gold) 16%, var(--amber) 28%,
+    var(--ember) 44%, #6e2742 64%, #2a1a3d 82%, #0c1226 100%);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+.winddown-bar::after {
+  background: linear-gradient(90deg, rgba(255, 243, 214, 0.55), transparent 40%);
+}
+
+.winddown .timeline-labels div { color: rgba(255, 248, 236, 0.6); }
+
+.winddown .timeline-labels strong { color: var(--gold-pale); }
+
+.winddown .timeline-note { color: rgba(255, 248, 236, 0.6); }
+
 /* ---------- Hub requirement callout band ---------- */
 .hub-band {
   background: linear-gradient(135deg, var(--night-2), var(--indigo));
