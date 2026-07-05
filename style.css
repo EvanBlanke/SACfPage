@@ -449,147 +449,28 @@ section {
 .phone-screen {
   position: relative;
   border-radius: 39px;
-  background: linear-gradient(200deg, #201a30 0%, #14111f 45%, #100d18 100%);
-  padding: 54px 20px 20px;
+  background: #000;
   overflow: hidden;
 }
 
+.phone-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* dynamic island, overlaid on the screenshot's status bar */
 .phone-screen::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 50%;
   transform: translateX(-50%);
-  width: 92px;
-  height: 26px;
+  width: 88px;
+  height: 25px;
   border-radius: 999px;
   background: #060509;
-}
-
-.p-label {
-  font-family: var(--font-clock);
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255, 247, 236, 0.5);
-  text-align: center;
-}
-
-.p-time {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 3rem;
-  letter-spacing: -0.02em;
-  color: var(--moonlight);
-  text-align: center;
-  line-height: 1.1;
-  margin-bottom: 14px;
-}
-
-.p-time small {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--gold);
-  margin-left: 4px;
-}
-
-.p-sunbar {
-  position: relative;
-  height: 10px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #171226 0%, #57284a 30%, var(--dawn) 52%, var(--ember) 72%, var(--gold) 90%, #ffe9c4 100%);
-  margin: 0 6px 8px;
-}
-
-.p-sunbar::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 26%;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: #fff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 0 14px rgba(255, 200, 120, 0.8);
-}
-
-.p-caption {
-  font-family: var(--font-clock);
-  font-size: 0.62rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 247, 236, 0.45);
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.p-row {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 15px;
-  padding: 11px 13px;
-  margin-bottom: 9px;
-}
-
-.p-row svg {
-  width: 17px;
-  height: 17px;
-  color: var(--gold);
-  flex-shrink: 0;
-}
-
-.p-row span {
-  font-size: 0.86rem;
-  font-weight: 500;
-  color: rgba(255, 247, 236, 0.88);
-  flex: 1;
-}
-
-.p-toggle {
-  width: 38px;
-  height: 23px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--ember), var(--gold));
-  position: relative;
-  flex-shrink: 0;
-}
-
-.p-toggle::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-}
-
-.p-wind {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  margin-top: 14px;
-  padding: 9px 12px;
-  border-radius: 999px;
-  border: 1px dashed rgba(255, 247, 236, 0.25);
-  font-family: var(--font-clock);
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255, 247, 236, 0.65);
-}
-
-.p-wind svg {
-  width: 13px;
-  height: 13px;
-  color: var(--gold);
+  z-index: 1;
 }
 
 /* ---------- Night chapter divider ---------- */
