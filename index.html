@@ -9,63 +9,139 @@
   <meta property="og:description" content="Wake up gently with a simulated sunrise across your whole room. Pay once, own it." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.sunrisealarmapp.com/" />
-  <meta name="theme-color" content="#0c1226" />
+  <meta name="theme-color" content="#0c0f20" />
   <link rel="icon" href="favicon.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,480..650;1,9..144,480..650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sunrise Alarm for Smart Lights",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "description": "Turns HomeKit-enabled smart lights into a gradual whole-room sunrise alarm, with Wind-Down Mode to fade lights back down at bedtime.",
+    "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" },
+    "url": "https://www.sunrisealarmapp.com/"
+  }
+  </script>
 </head>
 <body>
 
-  <header class="site-header" id="top-header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <img src="favicon.png" alt="" width="30" height="30" aria-hidden="true" />
-        Sunrise Alarm
-      </a>
-      <nav class="site-nav">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="/support">Support</a>
-        <a class="nav-cta" href="https://apps.apple.com/us/app/id6753123163">Get the App</a>
-      </nav>
-    </div>
+  <header class="capsule-nav" id="top-header">
+    <a class="brand" href="/">
+      <img src="favicon.png" alt="" width="26" height="26" aria-hidden="true" />
+      Sunrise Alarm
+    </a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="/support">Support</a>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/id6753123163">Get the App</a>
+    </nav>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="download">
-      <div class="stars" aria-hidden="true"></div>
-      <div class="sun" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <span class="hero-kicker">For iPhone and Apple Home</span>
-        <h1>Wake up to light,<br /><em>not an alarm</em></h1>
-        <p class="sub">Sunrise Alarm turns the smart lights you already own into a slow, warm sunrise, so you're already awake by the time your alarm goes off. No clock to buy, no new hardware.</p>
-        <div class="cta-group">
-          <a class="btn-appstore" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-            </svg>
-            Download on the App&nbsp;Store
-          </a>
-          <span class="cta-note">$4.99 one-time purchase · No subscription · iPhone &amp; iPad</span>
+    <!-- HERO — a dark room; the app is the light -->
+    <section class="hero on-dark" id="download">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="hero-kicker">For iPhone + Apple Home</span>
+          <h1>Wake up to light,<br /><em>not an alarm</em></h1>
+          <p class="sub">Sunrise Alarm turns the smart lights you already own into a slow, warm sunrise, so you're already awake by the time your alarm goes off. No clock to buy, no new hardware.</p>
+          <div class="cta-group">
+            <a class="btn-appstore" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              Download on the App&nbsp;Store
+            </a>
+            <span class="cta-note">$4.99 once &middot; No subscription &middot; iPhone &amp; iPad</span>
+          </div>
+          <div class="hub-notice" aria-label="Requirement note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="15" height="15"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><circle cx="12" cy="16" r=".5" fill="currentColor" stroke="none"/></svg>
+            Requires an Apple Home Hub: Apple TV, HomePod, or HomePod mini.
+          </div>
         </div>
-        <div class="hub-notice" aria-label="Requirement note">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><circle cx="12" cy="16" r=".5" fill="currentColor" stroke="none"/></svg>
-          Requires an Apple Home Hub: Apple TV, HomePod, or HomePod mini.
+
+        <div class="phone-stage" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="p-label">Wake time</div>
+              <div class="p-time">6:00<small>AM</small></div>
+              <div class="p-sunbar"></div>
+              <div class="p-caption">30 min sunrise &middot; gentle curve</div>
+              <div class="p-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 3.3 11 2.8 2.8 0 0 0-1.3 2.3V17h-4v-.7A2.8 2.8 0 0 0 8.7 14 6 6 0 0 1 12 3z"/></svg>
+                <span>Bedside lamps</span>
+                <span class="p-toggle"></span>
+              </div>
+              <div class="p-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+                <span>Ceiling light</span>
+                <span class="p-toggle"></span>
+              </div>
+              <div class="p-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="4" rx="1"/><line x1="7" y1="7" x2="7" y2="20"/><line x1="12" y1="7" x2="12" y2="20"/><line x1="17" y1="7" x2="17" y2="20"/></svg>
+                <span>Blinds</span>
+                <span class="p-toggle"></span>
+              </div>
+              <div class="p-wind">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+                Wind-Down &middot; 10:30 PM
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="timeline-section">
+    <!-- The night, chapter by chapter -->
+    <p class="night-label" aria-hidden="true">One night with Sunrise Alarm</p>
+
+    <!-- 10:30 PM — WIND-DOWN MODE -->
+    <section class="on-dark" id="wind-down">
       <div class="wrap">
-        <span class="section-kicker reveal">How it works</span>
-        <h2 class="section-title reveal">A sunrise before your alarm</h2>
-        <p class="section-sub reveal">Set your wake time. Sunrise Alarm starts a slow fade, ramping your lights (and blinds) from dark to full brightness. It runs on your Apple Home Hub, so it fires on time even if your phone is away.</p>
-        <div class="sunrise-timeline reveal">
+        <p class="clock"><strong>10:30 PM</strong> &mdash; Wind down &middot; New</p>
+        <h2 class="section-title">Your lights ease you to sleep</h2>
+        <p class="section-sub">Set a bedtime, and your lights fade slowly from bright to dark &mdash; a sunset for the end of your day, as gentle as the sunrise that starts it. Same simple setup, just reversed. Your favorite lights carry over.</p>
+        <div class="sunrise-timeline">
+          <div class="timeline-bar winddown-bar" role="img" aria-label="A gradient fading from full daylight through a warm ember glow into darkness"></div>
+          <div class="timeline-labels">
+            <div><strong>Bedtime</strong>Full light</div>
+            <div><strong>Winding down</strong>Warm glow</div>
+            <div><strong>Lights out</strong>Dark</div>
+          </div>
+          <p class="timeline-note">Pick a start time and duration, or shape the fade with your own brightness curve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2:00 AM — WHILE YOU SLEEP (hub) -->
+    <section class="on-dark" id="overnight">
+      <div class="wrap">
+        <p class="clock"><strong>2:00 AM</strong> &mdash; While you sleep</p>
+        <div class="overnight-card">
+          <div class="overnight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="18" height="8" rx="2"/><path d="M7 10V8a5 5 0 0 1 10 0v2"/><path d="M8 21h8"/><path d="M12 18v3"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Your Home Hub keeps watch</strong>
+            <p>Sunrise Alarm runs automations locally on your Apple TV, HomePod, or HomePod mini &mdash; so your sunrise fires right on time, even if your phone is off, dead, or across the house. Nothing leaves your home network. Most HomeKit households already have a hub.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5:30 AM — FIRST LIGHT (how it works) -->
+    <section class="on-dark" id="first-light">
+      <div class="wrap">
+        <p class="clock"><strong>5:30 AM</strong> &mdash; First light</p>
+        <h2 class="section-title">A sunrise before your alarm</h2>
+        <p class="section-sub">Set your wake time. Sunrise Alarm starts a slow fade, ramping your lights (and blinds) from dark to full brightness &mdash; so you surface gently instead of being yanked awake.</p>
+        <div class="sunrise-timeline">
           <div class="timeline-bar" role="img" aria-label="A gradient fading from darkness through a warm ember glow to full daylight"></div>
           <div class="timeline-labels">
             <div><strong>30 min before</strong>Dark</div>
@@ -77,33 +153,15 @@
       </div>
     </section>
 
-    <!-- WORKS WITH -->
-    <section class="works-with-section">
+    <!-- 6:00 AM — AWAKE (features) -->
+    <section class="on-dark" id="features">
       <div class="wrap">
-        <span class="section-kicker reveal">Works with your lights</span>
-        <h2 class="section-title reveal">If it's in Apple Home, it works</h2>
-        <p class="section-sub reveal">Sunrise Alarm drives any HomeKit-enabled bulb, plug, or shade, whatever the brand. If it's already in your Apple Home app, you're ready.</p>
-        <div class="brand-row reveal">
-          <span>Philips Hue</span>
-          <span>Nanoleaf</span>
-          <span>LIFX</span>
-          <span>Eve</span>
-          <span>Meross</span>
-          <span>Aqara</span>
-          <span class="more"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features">
-      <div class="wrap">
-        <span class="section-kicker reveal">Built for customization</span>
-        <h2 class="section-title reveal">Build a sunrise across your entire room</h2>
-        <p class="section-sub reveal">Most sunrise products are one dedicated lamp. Sunrise Alarm orchestrates every light in your room, in any combination you choose.</p>
+        <p class="clock"><strong>6:00 AM</strong> &mdash; Awake, before the alarm</p>
+        <h2 class="section-title">Build a sunrise across your entire room</h2>
+        <p class="section-sub">Most sunrise products are one dedicated lamp. Sunrise Alarm orchestrates every light in your room, in any combination you choose.</p>
         <div class="feature-grid">
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M7 17a5 5 0 0 1 10 0"/><line x1="2" y1="17" x2="4" y2="17"/><line x1="20" y1="17" x2="22" y2="17"/><line x1="12" y1="5" x2="12" y2="7"/><line x1="5" y1="8" x2="6.5" y2="9.5"/><line x1="19" y1="8" x2="17.5" y2="9.5"/><line x1="3" y1="21" x2="21" y2="21"/>
@@ -113,7 +171,7 @@
             <p>One bulb or your entire room. Add every light by your bed, or spread the sunrise across the rooms you move through first.</p>
           </div>
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
@@ -123,7 +181,7 @@
             <p>Set how bright the room gets at wake time, then shape the climb. A gentle exponential ramp that barely stirs you at first, or a near-linear fade when you need the room bright fast.</p>
           </div>
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 21a8 8 0 0 1-8-8c0-4 3-7.5 8-11 5 3.5 8 7 8 11a8 8 0 0 1-8 8z"/>
@@ -134,7 +192,7 @@
             <p>Begin in deep red-orange and warm into clean daylight, just like a real sunrise. Start from a built-in preset or build the color fade yourself. Works with full-color bulbs and with color-temperature bulbs that shift warm to cool.</p>
           </div>
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M18.36 6.64A9 9 0 1 1 5.64 6.64"/><path d="M12 2v10"/>
@@ -144,7 +202,7 @@
             <p>Bring in the lamps that can't dim, or a fan or any device on a smart plug. It switches on as the sunrise starts and off once you're up.</p>
           </div>
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="3" width="20" height="3" rx="1"/><line x1="6" y1="6" x2="6" y2="21"/><line x1="10" y1="6" x2="10" y2="21"/><line x1="14" y1="6" x2="14" y2="21"/><line x1="18" y1="6" x2="18" y2="21"/><rect x="2" y="19" width="20" height="2" rx="1"/>
@@ -157,7 +215,7 @@
             <p>Wake to real daylight, not just bulbs. Open your motorized blinds or shades as part of the sequence for the most natural rise there is.</p>
           </div>
 
-          <div class="feature-card reveal">
+          <div class="feature-card">
             <div class="icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 3l8 3.5v5c0 4.8-3.2 8.3-8 9.5-4.8-1.2-8-4.7-8-9.5v-5L12 3z"/><path d="M8.8 12.2l2.3 2.3 4.2-4.5"/>
@@ -169,8 +227,7 @@
 
         </div>
 
-        <!-- CTA 2: after features -->
-        <div class="section-cta reveal">
+        <div class="section-cta">
           <a class="btn-appstore" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -179,66 +236,49 @@
           </a>
           <span class="social-proof">Joined by 3,000+ early risers</span>
         </div>
-
       </div>
     </section>
 
-    <!-- WIND-DOWN MODE -->
-    <section class="winddown" id="wind-down">
+    <!-- MORNING — WORKS WITH -->
+    <section class="on-day" id="daybreak">
       <div class="wrap">
-        <span class="section-kicker reveal">New · Wind-Down Mode <span aria-hidden="true">🌙</span></span>
-        <h2 class="section-title reveal">Now your lights ease you to sleep, too</h2>
-        <p class="section-sub reveal">Set a bedtime, and your lights fade slowly from bright to dark — a sunset for the end of your day, as gentle as the sunrise that starts it. Same simple setup, just reversed. Your favorite lights carry over.</p>
-        <div class="sunrise-timeline reveal">
-          <div class="timeline-bar winddown-bar" role="img" aria-label="A gradient fading from full daylight through a warm ember glow into darkness"></div>
-          <div class="timeline-labels">
-            <div><strong>Bedtime</strong>Full light</div>
-            <div><strong>Winding down</strong>Warm glow</div>
-            <div><strong>Lights out</strong>Dark</div>
-          </div>
-          <p class="timeline-note">Pick a start time and duration, or shape the fade with your own brightness curve.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HUB REQUIREMENT CALLOUT -->
-    <section class="hub-band">
-      <div class="wrap hub-band-inner">
-        <div class="hub-band-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="10" width="18" height="8" rx="2"/><path d="M7 10V8a5 5 0 0 1 10 0v2"/><path d="M8 21h8"/><path d="M12 18v3"/>
-          </svg>
-        </div>
-        <div>
-          <strong>Apple Home Hub required</strong>
-          <p>Sunrise Alarm runs automations on your local Apple TV, HomePod, or HomePod mini. This is what lets your sunrise fire reliably at 6 a.m., even when your phone is off or not home. Most HomeKit households already have one.</p>
+        <p class="clock day">Works with your lights</p>
+        <h2 class="section-title">If it's in Apple Home, it works</h2>
+        <p class="section-sub">Sunrise Alarm drives any HomeKit-enabled bulb, plug, or shade, whatever the brand. If it's already in your Apple Home app, you're ready.</p>
+        <div class="brand-row">
+          <span>Philips Hue</span>
+          <span>Nanoleaf</span>
+          <span>LIFX</span>
+          <span>Eve</span>
+          <span>Meross</span>
+          <span>Aqara</span>
         </div>
       </div>
     </section>
 
     <!-- SETUP -->
-    <section class="alt" id="setup">
+    <section class="on-day" id="setup">
       <div class="wrap">
-        <span class="section-kicker reveal">Getting started</span>
-        <h2 class="section-title reveal">Set up in two minutes</h2>
-        <p class="section-sub reveal">If your lights are already in the Apple Home app, you're almost done.</p>
+        <p class="clock day">Getting started</p>
+        <h2 class="section-title">Set up in two minutes</h2>
+        <p class="section-sub">If your lights are already in the Apple Home app, you're almost done.</p>
         <div class="steps">
-          <div class="step reveal">
+          <div class="step">
             <span class="step-num">1</span>
             <h3>Add your lights to Apple Home</h3>
             <p>Get your bulbs or lamps showing in the Home app. Any HomeKit-enabled device qualifies.</p>
           </div>
-          <div class="step reveal">
+          <div class="step">
             <span class="step-num">2</span>
             <h3>Download Sunrise Alarm</h3>
             <p>Install from the App Store, then grant access to Apple Home on first launch.</p>
           </div>
-          <div class="step reveal">
+          <div class="step">
             <span class="step-num">3</span>
             <h3>Create your first alarm</h3>
             <p>Pick your wake time, choose your lights and blinds, and set how long it takes to reach full light.</p>
           </div>
-          <div class="step reveal">
+          <div class="step">
             <span class="step-num">4</span>
             <h3>Sleep, and wake to light</h3>
             <p>Your lights begin their slow rise before your alarm. Most mornings you'll be up before the old alarm ever sounds.</p>
@@ -248,12 +288,12 @@
     </section>
 
     <!-- PRICING -->
-    <section class="alt" id="pricing">
+    <section class="on-day" id="pricing">
       <div class="wrap">
-        <span class="section-kicker reveal">Pricing</span>
-        <h2 class="section-title reveal">Simple, honest pricing</h2>
-        <p class="section-sub reveal">Pay once. Own it. No subscription required.</p>
-        <div class="pricing-card reveal">
+        <p class="clock day">Pricing</p>
+        <h2 class="section-title">Simple, honest pricing</h2>
+        <p class="section-sub">Pay once. Own it. No subscription required.</p>
+        <div class="pricing-card">
           <div class="price-label">One-Time Purchase</div>
           <div class="price">$4.99</div>
           <span class="price-once">The app is a one-time purchase. No subscription required.</span>
@@ -269,11 +309,11 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq">
+    <section class="on-day" id="faq">
       <div class="wrap">
-        <span class="section-kicker reveal">Questions</span>
-        <h2 class="section-title reveal">Frequently asked questions</h2>
-        <div class="faq-list reveal">
+        <p class="clock day">Questions</p>
+        <h2 class="section-title">Frequently asked questions</h2>
+        <div class="faq-list">
           <details>
             <summary>Do I need an Apple Home Hub?</summary>
             <p>Yes. An Apple TV (4th generation or later), HomePod, or HomePod mini must be present on your home network. The hub runs the automation locally so your sunrise fires reliably even if your phone is asleep, off, or away. Most HomeKit households already have one. If you don't, the Apple TV HD and HomePod mini are affordable options.</p>
@@ -302,11 +342,11 @@
       </div>
     </section>
 
-    <!-- FINAL CTA (CTA 3) -->
-    <section class="final-cta">
+    <!-- FINAL CTA -->
+    <section class="final-cta on-day">
       <h2>Tomorrow morning could feel different.</h2>
       <p>Set up your first sunrise tonight. It takes two minutes.</p>
-      <a class="btn-appstore" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
+      <a class="btn-appstore ink" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
         </svg>
@@ -331,8 +371,7 @@
 
   <script>
     // Load at the top on refresh instead of restoring the previous scroll
-    // position (which would reveal the next section under the full-height hero).
-    // Hash links (e.g. #features) are unaffected and still scroll into view.
+    // position. Hash links (e.g. #features) still scroll into view.
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
@@ -340,26 +379,33 @@
       window.scrollTo(0, 0);
     }
 
-    // Header shifts from night to day styling once the hero is scrolled past
-    const header = document.getElementById('top-header');
-    const hero = document.querySelector('.hero');
-    new IntersectionObserver(([e]) => {
-      header.classList.toggle('day', !e.isIntersecting);
-    }, { rootMargin: '-65px 0px 0px 0px' }).observe(hero);
+    // The sky: one continuous gradient from midnight to morning, with color
+    // stops pinned to where the night's chapters actually sit on the page.
+    // CSS ships a percentage-based fallback; this repaints it in measured px.
+    (function () {
+      const ids = ['wind-down', 'overnight', 'first-light', 'features', 'daybreak', 'setup'];
+      const els = ids.map((id) => document.getElementById(id));
+      if (els.some((el) => !el)) return;
 
-    // Scroll-triggered reveals
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = `${(i % 4) * 70}ms`;
-      revealObserver.observe(el);
-    });
+      function paintSky() {
+        const top = (el) => el.getBoundingClientRect().top + window.scrollY;
+        const [windDown, overnight, firstLight, features, daybreak, setup] = els.map(top);
+        const px = (v) => Math.round(v) + 'px';
+        document.documentElement.style.setProperty('--sky', `linear-gradient(180deg,
+          var(--night) 0px,
+          var(--night) ${px(overnight)},
+          var(--dusk) ${px(firstLight)},
+          var(--dawn) ${px(firstLight + (features - firstLight) * 0.6)},
+          var(--ember) ${px(features + 100)},
+          var(--gold) ${px(daybreak + 60)},
+          var(--morning) ${px(setup + 150)},
+          var(--morning) 100%)`);
+      }
+
+      paintSky();
+      // Repaint whenever layout height changes (resize, fonts, FAQ toggles).
+      new ResizeObserver(paintSky).observe(document.body);
+    })();
   </script>
 
 </body>
