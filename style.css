@@ -649,6 +649,33 @@ section {
   font-size: 0.95rem;
 }
 
+/* The newest feature spans the full row, so the rest of the grid stays even */
+.feature-card-wide {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.feature-card-wide .icon {
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.feature-card-wide p {
+  max-width: 640px;
+}
+
+@media (max-width: 560px) {
+  .feature-card-wide {
+    display: block;
+  }
+
+  .feature-card-wide .icon {
+    margin-bottom: 18px;
+  }
+}
+
 .badge-new {
   display: inline-block;
   margin-left: 8px;
