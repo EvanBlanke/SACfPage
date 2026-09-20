@@ -75,49 +75,13 @@
       </div>
     </section>
 
-    <!-- The night, chapter by chapter -->
-    <p class="night-label" aria-hidden="true">One night with Sunrise Alarm</p>
-
-    <!-- 10:30 PM — WIND-DOWN MODE -->
-    <section class="on-dark" id="wind-down">
-      <div class="wrap">
-        <p class="clock"><strong>10:30 PM</strong> &mdash; Wind down &middot; New</p>
-        <h2 class="section-title">Let Your Lights Ease You to Sleep</h2>
-        <p class="section-sub">A sunset alarm eases you toward sleep by slowly dimming your lights over however long you like. Choose when it starts and how long it runs, add your lights, and the app takes care of the rest.</p>
-        <div class="sunrise-timeline">
-          <div class="timeline-bar winddown-bar" role="img" aria-label="A gradient fading from full daylight through a warm ember glow into darkness"></div>
-          <div class="timeline-labels">
-            <div><strong>Starts</strong>Full light</div>
-            <div><strong>Winding down</strong>Warm glow</div>
-            <div><strong>Lights out</strong>Dark</div>
-          </div>
-          <p class="timeline-note">Pick a Curve to shape the fade, and set any light to 0% so it switches off at the end.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 2:00 AM — WHILE YOU SLEEP (hub) -->
-    <section class="on-dark" id="overnight">
-      <div class="wrap">
-        <p class="clock"><strong>2:00 AM</strong> &mdash; While you sleep</p>
-        <div class="overnight-card">
-          <div class="overnight-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="10" width="18" height="8" rx="2"/><path d="M7 10V8a5 5 0 0 1 10 0v2"/><path d="M8 21h8"/><path d="M12 18v3"/>
-            </svg>
-          </div>
-          <div>
-            <strong>Your Home Hub Keeps Watch</strong>
-            <p>Once an alarm is created, it runs on its own through Apple Home automations on your Home hub, like an Apple TV or HomePod. It starts right on time even if your phone is off, dead, or across the house, and keeps working without an internet connection once it’s set up.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- The day, chapter by chapter: it starts at the sunrise -->
+    <p class="chapter-label" aria-hidden="true">One day with Sunrise Alarm</p>
 
     <!-- 5:30 AM — FIRST LIGHT (how it works) -->
     <section class="on-dark" id="first-light">
       <div class="wrap">
-        <p class="clock"><strong>5:30 AM</strong> &mdash; First light</p>
+        <p class="clock"><strong>5:30 AM</strong> &mdash; First light &middot; The main event</p>
         <h2 class="section-title">A Sunrise Before Your Alarm</h2>
         <p class="section-sub">A sunrise alarm gradually brightens your lights in the lead-up to your wake-up time, so you wake to a room that’s already getting lighter. It runs automatically on your scheduled days, all handled by Apple Home in the background.</p>
         <div class="sunrise-timeline">
@@ -140,20 +104,6 @@
         <p class="section-sub">Most sunrise lamps light one corner of the room. Sunrise Alarm works with the lights you already have, in any combination you like.</p>
         <div class="feature-grid">
 
-          <div class="feature-card feature-card-wide">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="9" x2="12" y2="2"/><polyline points="16 5 12 9 8 5"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="1" y1="22" x2="23" y2="22"/>
-              </svg>
-            </div>
-            <div>
-              <h3>
-                Sunset Alarms
-                <span class="badge-new" aria-label="New feature">New</span>
-              </h3>
-              <p>Create a sunset alarm that gradually dims your lights to help you ease into sleep. Set any light to 0% and it’ll switch off at the end.</p>
-            </div>
-          </div>
 
           <div class="feature-card">
             <div class="icon">
@@ -216,6 +166,21 @@
             <p>Your alarm data stays entirely on your device and within Apple Home. No accounts, no tracking.</p>
           </div>
 
+          <div class="feature-card feature-card-wide">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="9" x2="12" y2="2"/><polyline points="16 5 12 9 8 5"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="1" y1="22" x2="23" y2="22"/>
+              </svg>
+            </div>
+            <div>
+              <h3>
+                Sunset Alarms
+                <span class="badge-new" aria-label="New feature">New</span>
+              </h3>
+              <p>Create a sunset alarm that gradually dims your lights to help you ease into sleep. Set any light to 0% and it’ll switch off at the end.</p>
+            </div>
+          </div>
+
         </div>
 
         <div class="section-cta">
@@ -229,6 +194,46 @@
         </div>
       </div>
     </section>
+
+    <!-- The other end of the day: a contained night on the morning sky -->
+    <div class="nocturne">
+    <!-- 10:30 PM — WIND-DOWN MODE (the counterpart, after the day) -->
+    <section class="on-dark" id="wind-down">
+      <div class="wrap">
+        <p class="nocturne-turn">And at the other end of the day&hellip;</p>
+        <p class="clock"><strong>10:30 PM</strong> &mdash; Wind down &middot; New</p>
+        <h2 class="section-title">The Same Idea, Run Backwards</h2>
+        <p class="section-sub">A sunset alarm is a sunrise in reverse: it eases you toward sleep by slowly dimming the same lights over however long you like. Choose when it starts and how long it runs, add your lights, and the app takes care of the rest.</p>
+        <div class="sunrise-timeline">
+          <div class="timeline-bar winddown-bar" role="img" aria-label="A gradient fading from full daylight through a warm ember glow into darkness"></div>
+          <div class="timeline-labels">
+            <div><strong>Starts</strong>Full light</div>
+            <div><strong>Winding down</strong>Warm glow</div>
+            <div><strong>Lights out</strong>Dark</div>
+          </div>
+          <p class="timeline-note">Pick a Curve to shape the fade, and set any light to 0% so it switches off at the end.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2:00 AM — WHILE YOU SLEEP (hub); closes the loop back to the sunrise -->
+    <section class="on-dark" id="overnight">
+      <div class="wrap">
+        <p class="clock"><strong>2:00 AM</strong> &mdash; While you sleep</p>
+        <div class="overnight-card">
+          <div class="overnight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="18" height="8" rx="2"/><path d="M7 10V8a5 5 0 0 1 10 0v2"/><path d="M8 21h8"/><path d="M12 18v3"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Your Home Hub Keeps Watch</strong>
+            <p>Once an alarm is created, it runs on its own through Apple Home automations on your Home hub, like an Apple TV or HomePod. It starts right on time even if your phone is off, dead, or across the house, and keeps working without an internet connection once it’s set up. By the time you read this, it&rsquo;s already lining up tomorrow&rsquo;s sunrise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
 
     <!-- MORNING — WORKS WITH -->
     <section class="on-day" id="daybreak">
@@ -314,6 +319,10 @@
             <p>Any HomeKit-enabled light works, including full-color lights and lights that only change color temperature, from brands like Philips Hue, Nanoleaf, LIFX, Eve, and Meross. Smart plugs and outlets work too (on/off only), so a lamp on a smart plug can join in. Windows, blinds, and shades are supported as well, with control over position and tilt.</p>
           </details>
           <details>
+            <summary>How do sunrise alarms work?</summary>
+            <p>A sunrise alarm gradually brightens your lights in the lead-up to your wake-up time, so you wake to a room that&rsquo;s already getting lighter. Pick Sunrise when you create the alarm, choose your wake-up time and how long the sunrise runs, then add your lights and set each one&rsquo;s brightness and color. It runs automatically on the days you schedule.</p>
+          </details>
+          <details>
             <summary>How do sunset alarms work?</summary>
             <p>A sunset alarm eases you toward sleep by slowly dimming your lights over however long you like. Just pick Sunset when you create the alarm, choose when it starts and how long it runs, then add your lights. Set any light to 0% and it’ll switch off at the end.</p>
           </details>
@@ -344,7 +353,7 @@
     <!-- FINAL CTA -->
     <section class="final-cta on-day">
       <h2>Tomorrow morning could feel different</h2>
-      <p>Set a sunset alarm for tonight and a sunrise alarm for the morning. It only takes a few minutes.</p>
+      <p>Set a sunrise alarm for the morning, and a sunset alarm for tonight. It only takes a few minutes.</p>
       <a class="btn-appstore ink" href="https://apps.apple.com/us/app/id6753123163" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -378,26 +387,30 @@
       window.scrollTo(0, 0);
     }
 
-    // The sky: one continuous gradient from midnight to morning, with color
-    // stops pinned to where the night's chapters actually sit on the page.
+    // The sky: one continuous sweep from the last of the night up into full
+    // morning, with color stops pinned to where the day's chapters sit. The
+    // sunrise leads, so dawn breaks early and the page is bright by the time
+    // you reach the features. The night returns once, inside .nocturne, which
+    // paints its own sky and blends back out at both edges.
     // CSS ships a percentage-based fallback; this repaints it in measured px.
     (function () {
-      const ids = ['wind-down', 'overnight', 'first-light', 'features', 'daybreak', 'setup'];
+      const ids = ['first-light', 'features', 'wind-down', 'daybreak'];
       const els = ids.map((id) => document.getElementById(id));
       if (els.some((el) => !el)) return;
 
       function paintSky() {
         const top = (el) => el.getBoundingClientRect().top + window.scrollY;
-        const [windDown, overnight, firstLight, features, daybreak, setup] = els.map(top);
+        const [firstLight, features, windDown, daybreak] = els.map(top);
+        const dawnSpan = features - firstLight;
         const px = (v) => Math.round(v) + 'px';
         document.documentElement.style.setProperty('--sky', `linear-gradient(180deg,
           var(--night) 0px,
-          var(--night) ${px(overnight)},
-          var(--dusk) ${px(firstLight)},
-          var(--dawn) ${px(firstLight + (features - firstLight) * 0.6)},
+          var(--night) ${px(firstLight)},
+          var(--dusk) ${px(firstLight + dawnSpan * 0.30)},
+          var(--dawn) ${px(firstLight + dawnSpan * 0.68)},
           var(--ember) ${px(features + 100)},
-          var(--gold) ${px(daybreak + 60)},
-          var(--morning) ${px(setup + 150)},
+          var(--gold) ${px(windDown)},
+          var(--morning) ${px(daybreak)},
           var(--morning) 100%)`);
       }
 

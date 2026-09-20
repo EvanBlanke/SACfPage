@@ -1,7 +1,8 @@
 /* ============================================================
-   Sunrise Alarm — the page is one night of sleep.
-   A single unbroken gradient runs from midnight to morning;
-   scrolling is the sunrise. Set entirely in Apple system type.
+   Sunrise Alarm — the page is one day, and it opens at the sunrise.
+   A single unbroken gradient runs from the last of the night into full
+   morning; scrolling is the sunrise. The night returns once, inside
+   .nocturne, for the sunset alarm. Set entirely in Apple system type.
    ============================================================ */
 
 :root {
@@ -39,10 +40,10 @@
 
   /* fallback sky if JS never runs; JS repaints with measured px stops */
   --sky: linear-gradient(180deg,
-    var(--night) 0%, var(--night) 22%,
-    var(--dusk) 32%, var(--dawn) 39%,
-    var(--ember) 45%, var(--gold) 52%,
-    var(--morning) 62%, var(--morning) 100%);
+    var(--night) 0%, var(--night) 17%,
+    var(--dusk) 23%, var(--dawn) 29%,
+    var(--ember) 35%, var(--gold) 49%,
+    var(--morning) 57%, var(--morning) 100%);
 }
 
 * {
@@ -473,8 +474,8 @@ section {
   z-index: 1;
 }
 
-/* ---------- Night chapter divider ---------- */
-.night-label {
+/* ---------- Day chapter divider ---------- */
+.chapter-label {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -489,16 +490,43 @@ section {
   white-space: nowrap;
 }
 
-.night-label::before,
-.night-label::after {
+.chapter-label::before,
+.chapter-label::after {
   content: "";
   flex: 1;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255, 247, 236, 0.25));
 }
 
-.night-label::after {
+.chapter-label::after {
   background: linear-gradient(90deg, rgba(255, 247, 236, 0.25), transparent);
+}
+
+/* ---------- The nocturne: night returns, once, for the sunset ----------
+   The sky above this band has reached gold and below it is full morning, so
+   the band carries its own gradient and matches the sky exactly at both
+   edges. It reads as a contained moment rather than a reversal. */
+.nocturne {
+  position: relative;
+  background: linear-gradient(180deg,
+    var(--gold) 0,
+    var(--night) clamp(90px, 12vw, 150px),
+    var(--night) calc(100% - clamp(110px, 14vw, 180px)),
+    var(--morning) 100%);
+}
+
+/* the two chapters inside sit closer together than free-standing sections */
+.nocturne > section:first-child { padding-bottom: clamp(28px, 3.5vw, 48px); }
+.nocturne > section:last-child { padding-top: clamp(28px, 3.5vw, 48px); }
+
+.nocturne-turn {
+  text-align: center;
+  font-family: var(--font-clock);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 247, 236, 0.5);
+  margin-bottom: 14px;
 }
 
 /* ---------- Sunrise / sunset timeline bars ---------- */
@@ -1060,7 +1088,7 @@ section {
   .faq-list details { padding: 18px 20px; }
   .faq-list summary { font-size: 1rem; }
 
-  .night-label { letter-spacing: 0.18em; }
+  .chapter-label { letter-spacing: 0.18em; }
 
   .policy { padding-top: 110px; }
 
